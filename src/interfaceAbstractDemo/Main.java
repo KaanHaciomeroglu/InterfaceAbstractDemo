@@ -6,8 +6,8 @@ public class Main {
 		
 		//BaseCustomerManager customerManager = new NeroCustomerManager(new MernisServiceAdapter());
 		BaseCustomerManager customerManager = new StarbucksCustomerManager(new MernisServiceAdapter());
-
-		customerManager.save(new Customer(1, "Kaan", "Hacýömeroðlu", 1999, 68788106116L));
+		//Tc Long girilecek
+		customerManager.save(new Customer(1, "Kaan", "Hacýömeroðlu", 1999, L));
 		
 		System.out.println();
 		
