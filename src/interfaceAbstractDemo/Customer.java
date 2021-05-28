@@ -5,9 +5,9 @@ public class Customer implements IEntity {
 	public String firstName;
 	public String lastName;
 	public int dateTime;
-	public String NationalityId;
+	public long NationalityId;
 
-	public Customer(int id, String firstName, String lastName, int dateTime, String nationalityId) {
+	public Customer(int id, String firstName, String lastName, int dateTime, long nationalityId) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -21,18 +21,18 @@ public class Customer implements IEntity {
 	}
 
 	public String getFirstName() {
-		return firstName;
+		return firstName.toUpperCase();
 	}
 
 	public String getLastName() {
-		return lastName;
+		return lastName.toUpperCase();
 	}
 
 	public int getDateTime() {
 		return dateTime;
 	}
 
-	public String getNationalityId() {
+	public long getNationalityId() {
 		return NationalityId;
 	}
 
@@ -52,7 +52,7 @@ public class Customer implements IEntity {
 		this.dateTime = dateTime;
 	}
 
-	public void setNationalityId(String nationalityId) {
+	public void setNationalityId(long nationalityId) {
 		NationalityId = nationalityId;
 	}
 
